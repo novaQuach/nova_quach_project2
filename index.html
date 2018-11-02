@@ -5,40 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Willow</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header> <!--needs a background image-->
-        <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li>Willow</li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
-        <h1>Willow</h1>
-        <img src="assets/home-image-1.jpg"alt="Portrait of Willow in a yellow jacket. Willow has long  wavy auburn hair and emerald green eyes "> <!-- circle before element -->
+    <header class="header"> <!--needs a background image-->
+        <div class="wrapper">
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item"><a class="header__link header__link--accent" href="">Home</a></li>
+                    <li class="header__item"><a class="header__link"href="">About</a ></li>
+                        <li class="header__item header__item--bold">Willow</li>
+                        <li class="header__item"><a class="header__link" href="">Blog</a></li>
+                        <li class="header__item"><a class="header__link" href="">Contact</a></li>
+                    </ul>
+                </nav>
+                <h1 class="header__title">Willow</h1>
+                <img class="header__img" src="assets /home-image-1.jpg"Portrait of Willow in a yellow jacket. Willow has long  wavy auburn hair and emerald green eyes "> <!-- circle before element -->
+            </div>
     </header>
 
     <main>
-        <section>
-            <h2>Who's Willow?</h2> 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae qui delectus cum accusantium cumque impedit at sed iusto voluptates. Rerum hic exercitationem consequatur expedita odit adipisci veniam earum aspernatur dicta.</p>
-            <a href="#">Find out more</a>
+        <section class="about">
+            <h2 class="about__title">Who's Willow?</h2> 
+            <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae qui delectus cum accusantium cumque impedit at sed iusto voluptates. Rerum hic exercitationem consequatur expedita odit adipisci veniam earum aspernatur dicta.</p>
+            <a class="about__link" href="#">Find out more</a>
         </section>
 
 
-        <section>
-            <img src="assets/home-image-2.jpg" alt="White bridge between two cliffs on a fall day with waterfall in background.">
-            <h2>Favourite things</h2>
+        <section class="favourite">
+            <img class="favourite__img" src="assets /home-image-2.jpg" alt="White bridge between two cliffs on a fall day with waterfall in background.">
+            <h2 class="favourite__title">Favourite things</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque optio dolore delectus labore a consectetur possimus ducimus iure eaque minus nihil quae, enim nam numquam? Maxime, eligendi obcaecati? Voluptatibus, incidunt.</p>
             <a href="#">Read more</a>
         </section>
 
 
         <section>
-            <img src="assets/home-image-3.jpg" alt=" white lotus as focal point floating on water at night">
+            <img src="assets /home-image-3.jpg" alt=" white lotus as focal point floating on water at night">
             <h2>Bucket list</h2> 
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum aut repellendus praesentium, quas nihil itaque. Fuga magni suscipit molestiae ipsa voluptatibus voluptatem dolores natus eligendi vitae quis. Pariatur, quaerat expedita.</p>   
             <a href="#">Read more</a>        
@@ -46,19 +49,19 @@
 
 
         <section>
-            <img src="assets/home-image-4.jpg" alt= "Willow in yellow rain jacekt amongst greenery. Her back is away from audience">
+            <img src="assets /home-image-4.jpg" alt= "Willow in yellow rain jacekt amongst greenery. Her back is away from audience">
             <h2>Willow's Journey</h2>
             <a href="#">Find out more</a>
         </section>
 
         <section>
-            <img src="assets/home-image-5.jpg" alt="Panoramic view of a cotton field, orange barn house at a distance.">
+            <img src="assets /home-image-5.jpg" alt="Panoramic view of a cotton field, orange barn house at a distance.">
         </section>
 
         <section><!-- gallery section -->
-            <img src="assets/home-image-6.jpg" alt="fisheye view of a foggy road with trees on either side">
-            <img src="assets/home-image-7.jpg" alt="A bowl of uncut round lemons, and a bowl of sliced lemons">
-            <img src="assets/home-image-8.jpg" alt="antique styled stairs made with wood and metal. Dark turqoise wall paper with lotus design">
+            <img src="assets /home-image-6.jpg" alt="fisheye view of a foggy road with trees on either side">
+            <img src="assets /home-image-7.jpg" alt="A bowl of uncut round lemons, and a bowl of sliced lemons">
+            <img src="assets /home-image-8.jpg"antique styled stairs made with wood and metal. Dark turqoise wall paper with lotus design">
         </section>
 
         <footer>
