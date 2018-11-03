@@ -1,10 +1,17 @@
-$primary-color:#1f1f1f;
-$secondary-color:#f6f6f6;
-$tertiary-dark-color:#345231;
-$tertiary-light-color: #709b6b;
-$accent-color: #e4a436;
 
-.wrapper {
+
+// @mixin fontSize($sizeValue) {
+//     font-size: $sizeValue;
+//     color: blue;
+//     font-weight: bold;
+// }
+
+
+    // font-family: 'Abril Fatface', cursive;
+
+    // font-family: 'Montserrat', sans-serif;
+
+.wrapper{
     max-width:1280px;
     width:80%;
     margin:0 auto;

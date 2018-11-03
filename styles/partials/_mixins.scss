@@ -1,0 +1,6 @@
+@mixin heading-font-size($sizeValue,$color) {
+    font-family:'Abril Fatface', cursive;
+    font-size:$sizeValue;
+    color: $color;
+}
+    

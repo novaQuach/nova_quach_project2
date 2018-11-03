@@ -1,0 +1,8 @@
+.header {
+    background: $tertiary-dark-color;
+    width: 100%;
+}
+
+.header__title {
+    @include heading-font-size(80px, $secondary-color);
+}
