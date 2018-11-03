@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Willow</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,66 +28,91 @@
 
     <main>
         <section class="about">
-            <h2 class="about__title">Who's Willow?</h2> 
-            <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae qui delectus cum accusantium cumque impedit at sed iusto voluptates. Rerum hic exercitationem consequatur expedita odit adipisci veniam earum aspernatur dicta.</p>
-            <a class="about__link" href="#">Find out more</a>
+            <div class="wrapper about__flex-container">
+                <h2 class="about__title">Who's Willow?</h2> 
+                <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae qui delectus cum accusantium cumque impedit at sed iusto voluptates. Rerum hic exercitationem consequatur expedita odit adipisci veniam earum aspernatur dicta.</p>
+                <a class="about__link" href="#">Find out more</a>
+            </div>
         </section>
 
 
         <section class="favourite">
-            <img class="favourite__img" src="assets /home-image-2.jpg" alt="White bridge between two cliffs on a fall day with waterfall in background.">
-            <h2 class="favourite__title">Favourite things</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque optio dolore delectus labore a consectetur possimus ducimus iure eaque minus nihil quae, enim nam numquam? Maxime, eligendi obcaecati? Voluptatibus, incidunt.</p>
-            <a href="#">Read more</a>
+            <div class="wrapper favourite__flex-container">
+                <div class="favourite__flex-item"> <!--set the div with width 50% of wrapper, and give img width 100%-->
+                    <img class="favourite__img" src="assets /home-image-2.jpg" alt="White bridge between two cliffs on a fall day with waterfall in background.">
+                </div>
+                <div class="favourite__flex-item">
+                    <h2 class="favourite__title">Favourite things</h2>
+                    <p class="favourite__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque optio dolore delectus labore a consectetur possimus ducimus iure eaque minus nihil quae, enim nam numquam? Maxime, eligendi obcaecati? Voluptatibus, incidunt.</p>
+                    <a  class="favourite__link"href="#">Read more</a>
+                </div>
+            </div>
         </section>
 
 
-        <section>
-            <img src="assets /home-image-3.jpg" alt=" white lotus as focal point floating on water at night">
-            <h2>Bucket list</h2> 
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum aut repellendus praesentium, quas nihil itaque. Fuga magni suscipit molestiae ipsa voluptatibus voluptatem dolores natus eligendi vitae quis. Pariatur, quaerat expedita.</p>   
-            <a href="#">Read more</a>        
+        <section class="bucket">
+            <div class="wrapper bucket__flex-container">
+                <div class="bucket__flex-item">
+                    <img class="bucket__img" src="assets /home-image-3.jpg" alt=" white lotus as focal point floating on water at night">
+                </div>
+                <div class="bucket__flex-item">
+                    <h2 class="bucket_title">Bucket list</h2> 
+                    <p class="bucket__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum aut repellendus praesentium, quas nihil itaque. Fuga magni suscipit molestiae ipsa voluptatibus voluptatem dolores natus eligendi vitae quis. Pariatur, quaerat expedita.</p>   
+                    <a class="bucket__link" href="#">Read more</a>        
+                </div>
+            </div>
         </section>
 
 
-        <section>
-            <img src="assets /home-image-4.jpg" alt= "Willow in yellow rain jacekt amongst greenery. Her back is away from audience">
-            <h2>Willow's Journey</h2>
-            <a href="#">Find out more</a>
+        <section class="journey">
+            <div class="wrapper journey__flex-container">
+                <div class="journey__flex-item>
+                    <img class="journey__img" src="assets /home-image-4.jpg" alt= "Willow in yellow rain jacekt amongst greenery. Her back is away from audience">
+                </div>
+                <div class=" journey__flex-item journey__flex-item-container">
+                    <h2 class="journey__title">Willow's Journey</h2>
+                    <a class="journey__link" href="#">Find out more</a>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <img src="assets /home-image-5.jpg" alt="Panoramic view of a cotton field, orange barn house at a distance.">
+        <section class="background">
+            <img class="background__img" src="assets /home-image-5.jpg" alt="Panoramic view of a cotton field, orange barn house at a distance.">
         </section>
 
-        <section><!-- gallery section -->
-            <img src="assets /home-image-6.jpg" alt="fisheye view of a foggy road with trees on either side">
-            <img src="assets /home-image-7.jpg" alt="A bowl of uncut round lemons, and a bowl of sliced lemons">
-            <img src="assets /home-image-8.jpg"antique styled stairs made with wood and metal. Dark turqoise wall paper with lotus design">
+    <!-- gallery section -->
+
+        <section class="gallery">
+            <div class="wrapper gallery-flex-container"></div>
+                <img class="gallery__img " src="assets /home-image-6.jpg" alt="fisheye view of a foggy road with trees on either side">
+                <img class="gallery__img" src="assets /home-image-7.jpg" alt="A bowl of uncut round lemons, and a bowl of sliced lemons">
+                <img class="gallery__img" src="assets /home-image-8.jpg"antique styled stairs made with wood and metal. Dark turqoise wall paper with lotus design">
         </section>
 
-        <footer>
-            <nav>
-                <ul> <!--flex container, wrap, row-->
-                    <li>
-                        <a href=""><i></i>Photos</a>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis qui sequi maxime quis pariatur aliquid quod, vitae iure repudiandae placeat?</p>
-                    </li>
-                   <li>
-                       <a href=""><i></i>About</a>
-                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aperiam ut et atque quia at nisi asperiores exercitationem esse optio!</p>
-                   </li>
-                   <li>
-                       <a href=""><i></i>Blog</a>
-                       <p></p>
-                   </li>
-                   <li>
-                       <a href=""><i></i>Contact</a>
-                       <p></p>
-                   </li>
-                </ul>
-            </nav>
-            <div> Copyright &copy; 2018 HackerYou</div>
+        <footer class="footer">
+            <div class="wrapper">
+                <nav class="nav">
+                    <ul class="footer_main-flex-container nav__menu"> <!--flex container, wrap, row-->
+                        <li class="nav__item footer__sub-flex-container ">
+                            <a class="nav__link"href=""><i class=" fas fa-image nav__icon"></i>Photos</a>
+                            <p class="nav__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis qui sequi maxime quis pariatur aliquid quod, vitae iure repudiandae placeat?</p>
+                        </li>
+                        <li class="nav__item footer_sub-flex-container">
+                            <a class="nav__link" href=""><i></i>About</a>
+                            <p class="nav__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aperiam ut et atque quia at nisi asperiores exercitationem esse optio!</p>
+                        </li>
+                        <li class="nav__item footer__sub-flex-container">
+                            <a class="nav__link" href=""><i class="fas fa-tv nav__icon"></i>Blog</a>
+                            <p class="nav__text"></p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi molestias nam eius enim voluptate unde praesentium voluptatibus commodi ea a!</p>
+                        </li>
+                        <li class="nav__item footer_sub-flex-container">
+                            <a class="nav__link" href=""><i class="fas fa-phone nav__icon"></i>Contact</a>
+                            <p class="nav__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempora nisi, a possimus asperiores harum? Dolor laudantium, amet ipsa animi consequatur unde officia delectus perspiciatis.</p>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__notes"> Copyright &copy; 2018 HackerYou</div>
+            </div>
         </footer>
     </main>
 </body>
