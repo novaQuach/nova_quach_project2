@@ -17,80 +17,93 @@
                 <li class="header__item"><a class="header_link" href="">Contact</a></li>
             </ul>
         </nav>
-        <h2>Blog & news</h2>
+        <h2 class="header__title">Blog & news</h2>
     </header>
     <main>
-        <section> <!--flex box container-->
-            <div> <!-- flex child 1 -->
-                <img src="assets /blog-image-2.jpg"Willow, long auburn hair, emerald green eyes, relaxed facial expression, in yellow rain jacket behind out of focus leaves.">
-                <h3>About willow</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, reprehenderit soluta eaque numquam et quasi? Eius ipsa quas optio distinctio.</p>
-            </div>
-            <div>
-                <h3>Recent posts</h3>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Nihil asperiores sequi maiores nulla?</li>
-                    <li>Repellat numquam aliquid fugiat aspernatur.</li>
-                    <li>Et nemo qui alias ipsa!</li>
-                </ul>
-            </div>
-        </div>
-        <!-- flex child 2 -->
-        <div>
-            <div>
-                <h1>My favourite travel destinations</h1>
-                <p>Monday October 8th, 2018 by Willow</p>
-            </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta consequatur ratione facere placeat. Aut non inventore sit repellendus fuga provident earum qui! Magni illo tempora ab ut? Expedita nisi eaque eum ea hic eveniet. Aspernatur officia provident dolor nihil ratione, aliquam non? Recusandae, corporis nulla. Ipsum eos aspernatur quasi eligendi?</p>
-            </div>
-            <!-- comment section -->
-            <div> 
-                <div>
-                    <div>
-                        <img src="assets /blog-image-3.jpg" alt="Profile picture of Barb">
+        <section class="blog">
+            <div class="wrapper">
+                <div class= "blog__main-flex-container">
+                    <div class="blog__sidebar-flex-container"> 
+                        <div class="blog__flex-item blog__flex-item-container">
+                            <img class="blog__flex-item" src="assets /blog-image-2.jpg"Willow, long auburn hair, emerald green eyes, relaxed facial expression, in yellow rain jacket behind out of focus leaves.">
+                            <h3 class="blog__flex-item">About willow</h3>
+                            <p class="blog__flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, reprehenderit soluta eaque numquam et quasi? Eius ipsa quas optio distinctio.</p>
+                        </div>
+                        <div class="blog__flex-item blog__flex-item-container">
+                            <h3 class="blog__flex-item">Recent posts</h3>
+                            <ul class="blog__flex-item">
+                                <li class="blog__flex-item-text" >Lorem ipsum dolor sit amet.</li>
+                                <li class="blog__flex-item-text">Nihil asperiores sequi maiores nulla?</li>
+                                <li class="blog__flex-item-text">Repellat numquam aliquid fugiat aspernatur.</li>
+                                <li class="blog__flex-item-text">Et nemo qui alias ipsa!</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam officiis tempora corrupti rerum eos unde architecto, numquam perferendis magni facere animi, laboriosam sed voluptate quae.</p>
+                    <div class="blog__flex-item blog__post-flex container > <!--give bottom border-->
+                        <h1 class="blog__flex-item-text">My favourite travel destinations</h1>
+                        <p class="blog__flex-item-text">Monday October 8th, 2018 by Willow</p>
+                        <p class="blog__flex-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta consequatur ratione facere placeat. Aut non
+                            inventore sit repellendus fuga provident earum qui! Magni illo tempora ab ut? Expedita nisi eaque eum ea hic
+                            eveniet. Aspernatur officia provident dolor nihil ratione, aliquam non? Recusandae, corporis nulla. Ipsum eos
+                            aspernatur quasi eligendi?</p>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <img src="assets /blog-image-4.jpg"" alt="">
-                    </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolore velit laudantium amet quam deleniti dolor tempore culpa vitae debitis!</p>
-                    </div>
-                </div>    
             </div>
-            <div>
-                <form> <!--form itself is a felx box -->
-                    <div> <!--flex box, contain name and email address-->
-                        <div>
-                            <label for="Name"></label>
-                            <input type="text" placeholder="Name" id="Name">
+        </section>    
+
+        <!-- COMMENTS  -->
+    <aside>
+        <section class="comments">
+            <div class="wrapper"> 
+                <div class="comments__main-container"> <!--display flex, give bottom border-->
+                    <div class="comments__first-commenter-container"> <!--display flex-->
+                        <img class="comments__img comments__item"src="assets /blog-image-3.jpg" alt="Profile picture of first commenter">
+                        <div class="comments__item">
+                            <p class="comments__text">Tuesday October 9th, 2018 by Barb</p>
+                            <p class="comments__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nesciunt explicabo, similique architecto dignissimos rerum veniam qui neque quae numquam quia ratione quaerat alias dolorem.</p>
                         </div>
-                        <div>
-                            <label for="Email"></label>
-                            <input type="email" placeholder="Email address" id="Email">
+                    </div class="comments__second-commenter-container">
+                        <img class="comments__img comments__item" src="assets /blog-image-4.jpg"" alt="Profile picture of second commenter">
+                        <div class="comments-item">
+                            <p>Wednesday October 10th, 2018 by Daisy</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam officiis tempora corrupti rerum eos unde architecto, numquam perferendis magni facere animi, laboriosam sed voluptate quae.</p>
                         </div>
                     </div>
-                    <div>
-                        <label for="Comment"></label>
-                        <textarea name="Comment" id="Comment" placeholder="Comment"></textarea>
-                    </div>
-                    <div>
-                        <label for="Post Comment"></label>
-                        <input type="Submit" value="Post Comment" id="Post Comment">
-                    </div>
-                </form>
-            </div>    
-    
+                </div>
+            </div>
         </section>
+
+        <!-- COMMENTS FORM -->
+        <section class="comment-form">
+            <div class="wrapper">
+                <div class="comment-form__container"> <!--display flex-->
+                    <form>
+                        <div class="comment-form__item"> <!--flex box, contain name and email address-->
+                            <div>
+                                <label for="Name"></label>
+                                <input type="text" placeholder="Name" id="Name">
+                            </div>
+                            <div>
+                                <label for="Email"></label>
+                                <input type="email" placeholder="Email address" id="Email">
+                            </div>
+                        </div>
+                        <div class="comment-form__item">
+                            <label for="Comment"></label>
+                            <textarea name="Comment" id="Comment" placeholder="Comment"></textarea>
+                        </div>
+                        <div class="commment-form__item">
+                            <label for="Post Comment"></label>
+                            <input class="comment-form__button" type="Submit" value="Post Comment" id="Post Comment">
+                        </div>
+                    </form>
+                </div>
+            </div>        
+        </section>    
     </main>
-    <footer>
-        <p>Copyright &copy; 2018 HackerYou</p>
+    </aside>
+    <footer class="footer">
+        <p class="footer__note">Copyright &copy; 2018 HackerYou</p>
     </footer>
 </body>
 </html>
