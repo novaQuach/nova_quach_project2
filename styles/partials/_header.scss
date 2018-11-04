@@ -4,15 +4,8 @@
     max-width:1600px;
 }
 
-.header__title {
-    @include heading-font($willow-text, $secondary-color);
-    margin-left:80px;
-    
-   
-}
 
 
-       
 
 .header__list {
     list-style: none;
@@ -44,24 +37,25 @@
     position:relative;
 }
 
-.header__flex-item-title {
-    display:flex;
+.header__title {
+    @include heading-font($willow-text, $secondary-color);
+    margin: 0;
+    
     flex: 0 1 60%;
-    align-items:center;
-    // justify-content:flex-end;
+    align-self: center;
+
     &::before {
-        content:url('../assets/circle-text.png');
-        position:absolute;
+        content: url('../assets/circle-text.png');
+        position: absolute;
+        left: -50px;
+        top: 230px;
     }
-   
 }
 
-.header__flex-img-wrapper {
+.header__img {
+    box-shadow: 20px 20px 0 white;
     flex: 0 1 40%;
-    margin-top:50px;
-}
-
-.header__flex-item-img {
-    box-shadow: 10px 10px 0 white;
+    position: relative;
+    top: 60px;
 }
 
