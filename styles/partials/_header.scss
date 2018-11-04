@@ -4,9 +4,6 @@
     max-width:1600px;
 }
 
-
-
-
 .header__list {
     list-style: none;
     margin:0 auto;
@@ -14,8 +11,6 @@
     display:flex;
     justify-content: space-around;
     width:60%;
-    
-
 }
 
 .header__item--bold {
@@ -48,7 +43,7 @@
         content: url('../assets/circle-text.png');
         position: absolute;
         left: -50px;
-        top: 230px;
+        top: 250px;
     }
 }
 
@@ -57,5 +52,5 @@
     flex: 0 1 40%;
     position: relative;
     top: 60px;
+    height: 700px;
 }
-
