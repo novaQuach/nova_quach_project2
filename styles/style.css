@@ -441,3 +441,18 @@ html {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 25px 10px 25px; }
+
+.gallery__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 70px 0; }
+
+.gallery__img {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 33%;
+  flex: 0 1 33%;
+  margin-right: 30px; }
+
+.gallery__img:last-child {
+  margin-right: 0; }

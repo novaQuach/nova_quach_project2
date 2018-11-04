@@ -1,0 +1,16 @@
+
+.gallery {
+    &__container {
+        display:flex;
+        padding:70px 0;
+    }
+    &__img{
+        flex: 0 1 33%;
+        margin-right:30px;
+    }
+    
+    &__img:last-child{
+        margin-right:0;
+
+    }
+}
