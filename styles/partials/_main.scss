@@ -1,7 +1,41 @@
-// .main {
-//     padding-top: 80px;
-// }
 
-.about{
+
+.about {
     background: $secondary-color;
+    padding:100px 0;
+    &__container {
+        text-align:center;
+    }
+    &__title {
+        margin: 0;
+        @include heading-font ($text-large,$primary-color);
+        text-align: center;
+    }
+    &__text {
+        @include body-text(center);
+    }
+    &__link {
+        @include button-style(15px 30px 15px 30px);
+       
+    }
 }
+
+.journey {
+    background: $secondary-color;
+    padding:100px 0;
+    &__item-container {
+        text-align:center;
+    }
+    &__title {
+        margin:0;
+        @include heading-font($text-large,$primary-color);
+        text-align:left;
+    }
+    &__text {
+        @include body-text(left);
+    }
+    &__link {
+        @include button-style(15px 30px 15px 30px)
+    }
+}
+

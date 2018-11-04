@@ -1,10 +1,10 @@
 
 // FONTS and SIZES 
-@mixin heading-font($sizeValue,$color) {
+@mixin heading-font($size-value,$color) {
     transform:uppercase;
     font-family:'Abril Fatface', cursive;
     text-transform:uppercase;
-    font-size: $sizeValue;
+    font-size: $size-value;
     // font-size: $sizeValue * 1px;
     // font-size:$sizeValue/10 * 1rem; 
     color: $color;
@@ -21,6 +21,37 @@
     line-height:29px;
     color:$color;
 }
+
+@mixin body-text($text-align) {
+    font-family: 'Montserrat', sans-serif;
+    font-size:$primary-text;
+    letter-spacing: 1px;
+    line-height:32px;
+    text-align:$text-align;
+}
+
+@mixin button-style($padding...) {
+    text-decoration: none;
+    background: $accent-color;
+    color: $primary-color;
+    font-family: 'Abril Fatface',cursive;
+    letter-spacing: 1px;
+    line-height:32px;
+    text-align:center;
+    text-transform:uppercase;
+    font-size:$primary-text;
+    font-weight:400;
+    display: inline-block;
+    margin-top:20px;
+    padding: $padding;
+
+}
+
+
+
+
+
+
 
 
 

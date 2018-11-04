@@ -25,11 +25,12 @@ html {
 
 
 // body-text
-.about__text{
+.about__text,.journey__text{
     font-family: 'Montserrat', sans-serif;
     font-size:$primary-text;
     text-align:center;
     letter-spacing: 1px;
+    line-height:32px;
 }
 
 

@@ -9,17 +9,20 @@
     margin:0 auto;
     padding-top:20px;
     display:flex;
-    justify-content: space-around;
     width:60%;
 }
 
+
+
 .header__item--bold {
-    @include heading-font(3.2rem,$secondary-color);
+    @include heading-font($text-large,$secondary-color);
     line-height:20px;
+    margin: 0 23px 0 23px;
 }
 
 .header__link {
     @include menu-text-color($secondary-color);
+    margin: 0 23px 0 23px;
 }
 
 .header__link--accent {

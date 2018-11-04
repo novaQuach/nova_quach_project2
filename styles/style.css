@@ -140,11 +140,12 @@ html {
   width: 80%;
   margin: 0 auto; }
 
-.about__text {
+.about__text, .journey__text {
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   text-align: center;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  line-height: 32px; }
 
 .header {
   background: #345231;
@@ -158,8 +159,6 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
   width: 60%; }
 
 .header__item--bold {
@@ -168,10 +167,11 @@ html {
   transform: uppercase;
   font-family: 'Abril Fatface', cursive;
   text-transform: uppercase;
-  font-size: 3.2rem;
+  font-size: 4.2rem;
   color: #f6f6f6;
   letter-spacing: 1px;
-  line-height: 20px; }
+  line-height: 20px;
+  margin: 0 23px 0 23px; }
 
 .header__link {
   font-family: 'Montserrat', sans-serif;
@@ -181,7 +181,8 @@ html {
   text-decoration: none;
   text-transform: uppercase;
   line-height: 29px;
-  color: #f6f6f6; }
+  color: #f6f6f6;
+  margin: 0 23px 0 23px; }
 
 .header__link--accent {
   font-family: 'Montserrat', sans-serif;
@@ -232,4 +233,75 @@ html {
   height: 700px; }
 
 .about {
-  background: #f6f6f6; }
+  background: #f6f6f6;
+  padding: 100px 0; }
+  .about__container {
+    text-align: center; }
+  .about__title {
+    margin: 0;
+    -webkit-transform: uppercase;
+    -ms-transform: uppercase;
+    transform: uppercase;
+    font-family: 'Abril Fatface', cursive;
+    text-transform: uppercase;
+    font-size: 4.2rem;
+    color: #1f1f1f;
+    letter-spacing: 1px;
+    text-align: center; }
+  .about__text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    line-height: 32px;
+    text-align: center; }
+  .about__link {
+    text-decoration: none;
+    background: #e4a436;
+    color: #1f1f1f;
+    font-family: 'Abril Fatface',cursive;
+    letter-spacing: 1px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 400;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px 15px 30px; }
+
+.journey {
+  background: #f6f6f6;
+  padding: 100px 0; }
+  .journey__item-container {
+    text-align: center; }
+  .journey__title {
+    margin: 0;
+    -webkit-transform: uppercase;
+    -ms-transform: uppercase;
+    transform: uppercase;
+    font-family: 'Abril Fatface', cursive;
+    text-transform: uppercase;
+    font-size: 4.2rem;
+    color: #1f1f1f;
+    letter-spacing: 1px;
+    text-align: left; }
+  .journey__text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    line-height: 32px;
+    text-align: left; }
+  .journey__link {
+    text-decoration: none;
+    background: #e4a436;
+    color: #1f1f1f;
+    font-family: 'Abril Fatface',cursive;
+    letter-spacing: 1px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 400;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px 15px 30px; }
