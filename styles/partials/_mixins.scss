@@ -9,6 +9,7 @@
     // font-size:$sizeValue/10 * 1rem; 
     color: $color;
     letter-spacing: 1px;
+    font-weight:300;
 }
 
 @mixin menu-text-color($color) {
@@ -40,7 +41,7 @@
     text-align:center;
     text-transform:uppercase;
     font-size:$primary-text;
-    font-weight:400;
+    font-weight: 300;
     display: inline-block;
     margin-top:20px;
     padding: $padding;

@@ -15,27 +15,118 @@
         @include body-text(center);
     }
     &__link {
-        @include button-style(15px 30px 15px 30px);
+        @include button-style(10px 25px 10px 25px);
        
     }
 }
 
+
+.favourite {
+    &__flex-container{
+        display:flex;
+        position:relative;
+    }
+    .favourite__flex-item {
+        flex:0 1 50%;
+    }
+    .favourite__img{
+        box-shadow: 20px 20px $tertiary-light-color,
+        -200px 20px $tertiary-light-color;
+        position:relative;
+        bottom:50px;            
+    }
+    .favourite__info{
+        text-align:left;
+        padding:50px 0 0 110px;
+    }
+    &__title{
+        @include heading-font ($text-medium,$primary-color);
+        text-align:left;
+        margin:0;
+    }
+    &__text{
+        @include body-text (left);
+    }
+    &__link {
+            @include button-style(10px 25px);
+            
+        }
+    }    
+    
+
+.bucket {
+    &__flex-container {
+        display: flex;
+        position: relative;
+        text-align: right;
+    }
+    .bucket__flex-item {
+        flex: 0 1 50%;
+    }   
+    
+    .bucket__info {
+        text-align: right;
+        margin: 50px 110px 0 0;
+    }
+    
+    
+    
+    .bucket__img {
+        box-shadow: 20px 20px $tertiary-dark-color,
+        200px 20px $tertiary-dark-color;
+        position:relative;
+        top:35px;
+        right:10px;
+        width:100%;
+        
+        
+    }
+    
+    &__title {
+        @include heading-font($text-medium,$primary-color);
+        margin:0;
+    }
+    
+    &__text {
+        @include body-text(right);
+    }
+    
+    &__link{
+        @include button-style(10px 25px);
+        margin-bottom:100px;
+    }
+}
+    
+    // h-offset v-offset blur spread color
 .journey {
     background: $secondary-color;
     padding:100px 0;
-    &__item-container {
-        text-align:center;
+    &__flex-container {
+        display:flex;
+        margin-top:50px;
+        margin-bottom:40px;
+        .journey__img {
+            flex: 0 1 33%;
+            box-shadow: 20px 20px $tertiary-light-color;
+        }
+        .journey__item-container {
+            text-align:left;
+            flex:0 1 67%;
+            padding-left: 120px;
+        }
     }
     &__title {
         margin:0;
         @include heading-font($text-large,$primary-color);
         text-align:left;
+        font-weight:300;
     }
     &__text {
         @include body-text(left);
+        margin:25px 0 13px 0;
     }
     &__link {
-        @include button-style(15px 30px 15px 30px)
+        @include button-style(10px 25px 10px 25px)
+        
     }
 }
-
