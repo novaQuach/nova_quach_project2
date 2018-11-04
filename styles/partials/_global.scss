@@ -10,11 +10,28 @@
     // font-family: 'Abril Fatface', cursive;
 
     // font-family: 'Montserrat', sans-serif;
+html {
+    font-size:62.5%;
+}
+
 
 .wrapper{
     max-width:1280px;
     width:80%;
     margin:0 auto;
 }
+
+
+// menu-text
+
+
+// body-text
+.about__text{
+    font-family: 'Montserrat', sans-serif;
+    font-size:$primary-text;
+    text-align:center;
+    letter-spacing: 1px;
+}
+
 
 

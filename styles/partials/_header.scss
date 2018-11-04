@@ -1,8 +1,67 @@
 .header {
     background: $tertiary-dark-color;
     width: 100%;
+    max-width:1600px;
 }
 
 .header__title {
-    @include heading-font-size(80px, $secondary-color);
+    @include heading-font($willow-text, $secondary-color);
+    margin-left:80px;
+    
+   
 }
+
+
+       
+
+.header__list {
+    list-style: none;
+    margin:0 auto;
+    padding-top:20px;
+    display:flex;
+    justify-content: space-around;
+    width:60%;
+    
+
+}
+
+.header__item--bold {
+    @include heading-font(3.2rem,$secondary-color);
+    line-height:20px;
+}
+
+.header__link {
+    @include menu-text-color($secondary-color);
+}
+
+.header__link--accent {
+    @include menu-text-color($accent-color);
+}
+
+.header__main-flex-container {
+    display:flex;
+    width:100%;
+    position:relative;
+}
+
+.header__flex-item-title {
+    display:flex;
+    flex: 0 1 60%;
+    align-items:center;
+    // justify-content:flex-end;
+    &::before {
+        content:url('../assets/circle-text.png');
+        position:absolute;
+    }
+   
+}
+
+.header__flex-img-wrapper {
+    flex: 0 1 40%;
+    margin-top:50px;
+}
+
+.header__flex-item-img {
+    box-shadow: 10px 10px 0 white;
+}
+
