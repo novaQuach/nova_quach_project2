@@ -81,7 +81,7 @@
     <!-- gallery section -->
 
         <section class="gallery wrapper">
-            <div class="gallery__container">
+            <div class="gallery__flex-container">
 
                 <img class="gallery__img " src="assets/home-image-6.jpg" alt="fisheye view of a foggy road with trees on either side">
                 <img class="gallery__img" src="assets/home-image-7.jpg" alt="A bowl of uncut round lemons, and a bowl of sliced lemons">
@@ -92,28 +92,38 @@
 
     <footer class="footer">
         <div class="wrapper">
-            <nav class="nav">
-                <ul class="footer_main-flex-container nav__menu"> <!--flex container, wrap, row-->
-                    <li class="nav__item footer__sub-flex-container ">
-                        <a class="nav__link"href=""><i class=" fas fa-image nav__icon"></i>Photos</a>
-                        <p class="nav__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis qui sequi maxime quis pariatur aliquid quod, vitae iure repudiandae placeat?</p>
-                    </li>
-                    <li class="nav__item footer_sub-flex-container">
-                        <a class="nav__link" href=""><i></i>About</a>
-                        <p class="nav__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aperiam ut et atque quia at nisi asperiores exercitationem esse optio!</p>
-                    </li>
-                    <li class="nav__item footer__sub-flex-container">
-                        <a class="nav__link" href=""><i class="fas fa-tv nav__icon"></i>Blog</a>
-                        <p class="nav__text"></p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi molestias nam eius enim voluptate unde praesentium voluptatibus commodi ea a!</p>
-                    </li>
-                    <li class="nav__item footer_sub-flex-container">
-                        <a class="nav__link" href=""><i class="fas fa-phone nav__icon"></i>Contact</a>
-                        <p class="nav__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempora nisi, a possimus asperiores harum? Dolor laudantium, amet ipsa animi consequatur unde officia delectus perspiciatis.</p>
-                    </li>
-                </ul>
-            </nav>
-            <div class="footer__note"> Copyright &copy; 2018 HackerYou</div>
+            <ul class="footer__main-flex-container nav__menu"> <!--flex container, wrap, row-->
+                <li class="footer__item footer__sub-flex-container ">
+                    <a class="footer__link" href="">
+                        <i class="fas fa-image footer__icon"></i>
+                        <span class="footer__link-span">Photos</span>
+                    </a>
+                    <p class="footer__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis qui sequi maxime quis pariatur aliquid quod, vitae iure placeat?</p>
+                </li>
+                <li class="footer__item footer_sub-flex-container">
+                    <a class="footer__link" href="">
+                        <i class="fas fa-user-alt footer__icon"></i>
+                        <span class="footer__link-span">About</span>
+                    </a>
+                    <p class="footer__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aperiam ut et atque quia at nisi asperiores exercitationem esse optio!</p>
+                </li>
+                <li class="footer__item footer__sub-flex-container">
+                    <a class="footer__link" href="">
+                        <i class="fas fa-tv footer__icon"></i>
+                        <span class="footer__link-span">Blog</span>
+                    </a>
+                    <p class="footer__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi molestias nam eius enim voluptate unde praesentium voluptatibus!</p>
+                </li>
+                <li class="footer__item footer_sub-flex-container">
+                    <a class="footer__link" href="">
+                        <i class="fas fa-phone footer__icon"></i>
+                        <span class="footer__link-span">Contact</span>
+                    </a>
+                    <p class="footer__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempora nisi, a possimus asperiores harum? Dolor laudantium.</p>
+                </li>
+            </ul>
         </div>
+        <div class="footer__note"> Copyright &copy; 2018 HackerYou</div>
     </footer>
 
 </body>

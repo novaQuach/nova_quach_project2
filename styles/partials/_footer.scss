@@ -1,0 +1,67 @@
+.footer {
+    background:$secondary-color;
+
+}
+
+.footer__main-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__item {
+    list-style:none;
+    flex: 0 1 50%;
+}
+.footer__link {
+    text-decoration:none;
+    color:$primary-color;
+    font-family: 'Abril Fatface',cursive;
+    letter-spacing: 1px;
+    text-transform:uppercase;
+    font-size: $text-medium;
+    font-weight:300;
+
+    margin-right:10px;
+    display: inline-block;
+}
+
+.footer__icon {
+    background-color: $accent-color;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size:$primary-text;
+    display: inline-block;
+    
+    &::before {
+        position: relative;
+        left: 15px;
+        top: 15px;
+    }
+}
+
+// This icon is a little bigger
+.footer__icon.fa-tv::before {
+    left: 13px;
+}
+
+.footer__link-span {
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    margin-left: 15px;
+}
+
+.footer__text {
+    margin-left: 75px;
+    margin-right: 10px;
+    @include body-text(auto);
+}
+
+.footer__note {
+    background-color: $primary-color;
+    color: $secondary-color;
+    @include body-text(center);
+    font-weight: 100;
+    padding: 5px 0 5px 0;
+}
