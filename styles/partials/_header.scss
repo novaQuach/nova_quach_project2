@@ -61,30 +61,46 @@
 
 // BLOG STYLES BEGIN 
 .header {
+    height:50vh;
     &__blog-img{
     background: url("../assets/blog-image-1.jpg");
-    height:400px;
     }
+
+     &__flex-container {
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+    }
+
+    &__nav {
+        background:$tertiary-dark-color;
+        padding-bottom:13px;
+    }
+
+    &__blog-tittle-header {
+        position:relative;
+    }
+   
+    &__list {
+        padding-left:0;
+        justify-content:center;
+    }
+
 
     &__blog-title {
         @include heading-font($text-xlarge,$secondary-color);
         line-height:92px;
-        // margin-top:10px;
-        // margin-bottom:0px;
-        // padding-top:322px;
-        flex: 0 1 auto;
-    }
-
-    &__main-flex-container{
-        display:flex;
-        justify-content: space-between;
-    }
-
-    &__nav {
-        flex: 0 1 auto;
-        justify-self:space-between;
+        margin:0;
+        position:relative;
+        top:17px;
+        
     }
 
 }
 
-
+// CONTACT STYLES BEGIN 
+.header {
+    &__contact{
+        background:url('assets/contact-image-1.jpg');
+    }
+}

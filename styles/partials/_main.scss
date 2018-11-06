@@ -301,8 +301,9 @@
     background:$secondary-color;
     &__main-container {
         display:flex;
-        padding:50px;
+        padding:80px 0;
         align-items:flex-start;
+        justify-content:space-between;
     
     }
     // the social media box 
@@ -313,8 +314,7 @@
             width:100%;
             display:flex;
             flex-direction:column;
-            justify-items:center;
-            padding:50px 15px 40px 25px;
+            padding:40px 18px 30px 25px;
             
             
             
@@ -352,6 +352,9 @@
                         font-weight:bold;
                   
                     }
+                    &__details-item {
+                        margin-bottom:18px;
+                    }
 
 
 
@@ -369,10 +372,11 @@
             
             }
                 &__email, &__name {
-                        flex: 0 1 50%;
+                        // flex: 0 1 50%;
                         padding:25px;
                         border:none;
                         @include body-text(left);
+                        width:49%;
                         &::placeholder {
                             @include body-text(left);
                             opacity:1;
