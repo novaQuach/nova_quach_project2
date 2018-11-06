@@ -52,29 +52,22 @@
                         </ul>
                     </div>
 
-                    <div class="contact__form-container">
-                        <form>
-                            <div class="contact__form-item">
-                                <div>
-                                    <label for="Name"></label>
-                                    <input type="text" placeholder="Name" id="Name">
-                                </div>
-                                <div class="contact__form-item">
-                                    <label for="Email"></label>
-                                    <input type="Email" placeholder="Email address" id="Email">
-                                </div>
-                            </div>    
-                            <div class="contact__form-item">
-                                <label for="Message"></label>
-                                <textarea name="Message" id="Message" placeholder="Message" cols="30" rows="10"></textarea>
-                            </div>
-                            <div class="contact__form-item">
-                                <label for="Submit"></label>
-                                <input class="contact__form-button" type="Submit" value="Submit" placeholder="Submit" id="Submit">
-                            </div>
-                        </form>
-                    </div>        
-                    </div>
+                    <form class="contact__form-container">
+                        <div class="contact__email-name-wrapper">
+                            <label for="Name"></label>
+                            <input class="contact__name"type="text" placeholder="Name" id="Name">
+                    
+                            <label for="Email"></label>
+                            <input class="contact__email" type="Email" placeholder="Email address" id="Email">
+                        </div>
+
+                        <label for="Message"></label>
+                        <textarea class="contact__message" name="Message" id="Message" placeholder="Message" cols="30" rows="10"></textarea>
+
+                    
+                        <label for="Submit"></label>
+                        <input class="contact__button" type="Submit" value="Submit"  id="Submit">
+                    </form>        
             </div>
         </section>
     </main>

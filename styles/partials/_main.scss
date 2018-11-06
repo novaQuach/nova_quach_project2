@@ -166,8 +166,11 @@
                 }
 
                 &__side-list {
-                    list-style:circle;
+                    
                     font-weight:lighter;
+                }
+                &__side-link{
+                    color: $tertiary-light-color;
                 }
                       
             
@@ -299,25 +302,24 @@
     &__main-container {
         display:flex;
         padding:50px;
+        align-items:flex-start;
     
     }
     // the social media box 
         &__info-container {
             flex: 0 1 33%;
             background: white;
-            margin-right:20px;
+            margin-right:40px;
             width:100%;
             display:flex;
             flex-direction:column;
             justify-items:center;
-            padding:20px;
+            padding:50px 15px 40px 25px;
             
             
             
         }
-            // &__contact-media {
-            //     text-align:left;
-            // }
+            
                 &__media-list {
                     list-style:none;
                     padding:0;
@@ -329,7 +331,7 @@
                     }
                         &__media-link {
                             color: $tertiary-dark-color;
-                            font-size:$primary-text;
+                            font-size:$text-small;
                             margin-right:18px;
                         }
                         
@@ -337,26 +339,67 @@
                     list-style:none;
                     padding:0;
                 }
-                    &__text-link--bold{
-                        font-weight:400;
-                    }
+            
 
                     &__text-link {
+                        @include body-text(left);
                         text-decoration:none;
-                        font-size:$primary-text;
                         color:$primary-color;
                         font-weight:100;
+                    }
+
+                    &__text-link--bold{
+                        font-weight:bold;
+                  
                     }
 
 
 
         &__form-container {
             flex: 0 1 67%;
+            display: flex;
+            flex-direction:column;
+            height:500px;
+            
         }
-
-
-
-
-
+            &__email-name-wrapper {
+                display:flex;
+                flex: 0 1 20%;
+                justify-content:space-between;
+            
+            }
+                &__email, &__name {
+                        flex: 0 1 50%;
+                        padding:25px;
+                        border:none;
+                        @include body-text(left);
+                        &::placeholder {
+                            @include body-text(left);
+                            opacity:1;
+                        }
+                }
+            &__message {
+                flex: 0 1 70%;
+                margin-top: 20px;
+                padding:25px;
+                @include body-text(left);
+                resize:none;
+                border:none;
+                &::placeholder {
+                    @include body-text(left);
+                    opacity:1;
+                }
+            }
+            
+            &__button {
+                flex: 1 0 10%;
+                @include button-style(0);
+                border:none;
+                    &::value{
+                        size:$primary-text;
+                    }
+                
+                }
+            
 
 }

@@ -519,8 +519,9 @@ html {
     line-height: 32px;
     text-align: left; }
   .blog__side-list {
-    list-style: circle;
     font-weight: lighter; }
+  .blog__side-link {
+    color: #709b6b; }
   .blog__post-flex-container {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 67%;
@@ -648,13 +649,16 @@ html {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 50px; }
+    padding: 50px;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
   .contact__info-container {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 33%;
     flex: 0 1 33%;
     background: white;
-    margin-right: 20px;
+    margin-right: 40px;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -664,7 +668,7 @@ html {
     -ms-flex-direction: column;
     flex-direction: column;
     justify-items: center;
-    padding: 20px; }
+    padding: 50px 15px 40px 25px; }
   .contact__media-list {
     list-style: none;
     padding: 0; }
@@ -672,22 +676,144 @@ html {
     display: inline-block; }
   .contact__media-link {
     color: #345231;
-    font-size: 2rem;
+    font-size: 2.4rem;
     margin-right: 18px; }
   .contact__details {
     list-style: none;
     padding: 0; }
-  .contact__text-link--bold {
-    font-weight: 400; }
   .contact__text-link {
-    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
+    letter-spacing: 1px;
+    line-height: 32px;
+    text-align: left;
+    text-decoration: none;
     color: #1f1f1f;
     font-weight: 100; }
+  .contact__text-link--bold {
+    font-weight: bold; }
   .contact__form-container {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 67%;
-    flex: 0 1 67%; }
+    flex: 0 1 67%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 500px; }
+  .contact__email-name-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 20%;
+    flex: 0 1 20%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .contact__email, .contact__name {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 50%;
+    flex: 0 1 50%;
+    padding: 25px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    line-height: 32px;
+    text-align: left; }
+    .contact__email::-webkit-input-placeholder, .contact__name::-webkit-input-placeholder {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      letter-spacing: 1px;
+      line-height: 32px;
+      text-align: left;
+      opacity: 1; }
+    .contact__email:-ms-input-placeholder, .contact__name:-ms-input-placeholder {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      letter-spacing: 1px;
+      line-height: 32px;
+      text-align: left;
+      opacity: 1; }
+    .contact__email::-ms-input-placeholder, .contact__name::-ms-input-placeholder {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      letter-spacing: 1px;
+      line-height: 32px;
+      text-align: left;
+      opacity: 1; }
+    .contact__email::placeholder, .contact__name::placeholder {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      letter-spacing: 1px;
+      line-height: 32px;
+      text-align: left;
+      opacity: 1; }
+  .contact__message {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 70%;
+    flex: 0 1 70%;
+    margin-top: 20px;
+    padding: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    line-height: 32px;
+    text-align: left;
+    resize: none;
+    border: none; }
+    .contact__message::-webkit-input-placeholder {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      letter-spacing: 1px;
+      line-height: 32px;
+      text-align: left;
+      opacity: 1; }
+    .contact__message:-ms-input-placeholder {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      letter-spacing: 1px;
+      line-height: 32px;
+      text-align: left;
+      opacity: 1; }
+    .contact__message::-ms-input-placeholder {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      letter-spacing: 1px;
+      line-height: 32px;
+      text-align: left;
+      opacity: 1; }
+    .contact__message::placeholder {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      letter-spacing: 1px;
+      line-height: 32px;
+      text-align: left;
+      opacity: 1; }
+  .contact__button {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 10%;
+    flex: 1 0 10%;
+    text-decoration: none;
+    background: #e4a436;
+    color: #1f1f1f;
+    font-family: 'Abril Fatface',cursive;
+    letter-spacing: 1px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 300;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 0;
+    border: none; }
+    .contact__button::value {
+      size: 2rem; }
 
 .background__img {
   display: block;
