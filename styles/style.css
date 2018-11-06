@@ -267,8 +267,45 @@ html {
     position: relative;
     top: 17px; }
 
-.header__contact {
-  background: url("assets/contact-image-1.jpg"); }
+.header {
+  height: 50vh; }
+  .header__contact-img {
+    background: url("../assets/contact-image-1.jpg"); }
+  .header__flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .header__nav {
+    background: #345231;
+    padding-bottom: 13px; }
+  .header__contact-tittle-header {
+    position: relative; }
+  .header__list {
+    padding-left: 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .header__contact-title {
+    -webkit-transform: uppercase;
+    -ms-transform: uppercase;
+    transform: uppercase;
+    font-family: 'Abril Fatface', cursive;
+    text-transform: uppercase;
+    font-size: 8rem;
+    color: #f6f6f6;
+    letter-spacing: 1px;
+    font-weight: 300;
+    line-height: 92px;
+    margin: 0;
+    position: relative;
+    top: 17px; }
 
 .about {
   background: #f6f6f6;

@@ -100,7 +100,39 @@
 
 // CONTACT STYLES BEGIN 
 .header {
-    &__contact{
-        background:url('assets/contact-image-1.jpg');
+    height:50vh;
+    &__contact-img{
+    background: url("../assets/contact-image-1.jpg");
     }
+
+     &__flex-container {
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+    }
+
+    &__nav {
+        background:$tertiary-dark-color;
+        padding-bottom:13px;
+    }
+
+    &__contact-tittle-header {
+        position:relative;
+    }
+   
+    &__list {
+        padding-left:0;
+        justify-content:center;
+    }
+
+
+    &__contact-title {
+        @include heading-font($text-xlarge,$secondary-color);
+        line-height:92px;
+        margin:0;
+        position:relative;
+        top:17px;
+        
+    }
+
 }
