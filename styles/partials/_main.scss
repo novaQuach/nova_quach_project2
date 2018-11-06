@@ -128,3 +128,115 @@
         
     }
 }
+
+
+// BLOG STYLES BEING //
+
+.blog {
+    background:$secondary-color;
+    &__main-flex-container {
+        display:flex;
+        padding-top:50px;
+    }
+        &__sidebar-flex-container {
+            flex: 0 1 33%;
+            flex-direction:wrap;
+            
+           
+        }
+            &__sidebar-item {
+                display:flex;
+                flex: 0 1 100%;
+                margin-bottom: 20px;
+                padding:35px;
+                background:white;
+                justify-items: center;
+                flex-direction:column;
+               
+            }
+
+                &__side-title {
+                    @include heading-font($text-small,$primary-color);
+                    text-align:left;
+                    font-weight:300;
+                    }
+
+                &__side-text {
+                    @include body-text(left);
+                }
+
+                &__side-list {
+                    list-style:circle;
+                    font-weight:lighter;
+                }
+                      
+            
+        &__post-flex-container {
+            flex: 0 1 67%;
+            padding:30px;
+            background:white;
+            margin-left:31px;
+            margin-bottom:20px;
+            border-bottom: 5px solid $tertiary-light-color;
+        }
+            &__post-title {
+                @include heading-font($text-medium,$primary-color);
+            }
+
+            &__main-text {
+                @include body-text(left);
+
+            }
+
+}
+
+.comments {
+    background:$secondary-color;
+    &__main-container {
+        display:flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+        width:65.5%;
+        margin-left: 34.5%;
+    }
+        &__first-commenter-container {
+            display:flex;
+            width:100%;
+            padding:20px;
+            background:white;
+            flex-wrap:wrap;
+            margin-bottom:20px;
+        
+        }
+           
+            &__img{
+                flex: 1 0 20%;
+                padding:20px;
+            }
+
+            &__text-wrapper {
+                flex: 1 0 80%;
+            }
+                &__text{
+                    @include body-text(left);
+                }
+
+        &__second-commenter-container{
+            width:100%;
+            display:flex;
+            background:white;
+            
+        }
+            &__img {
+                flex: 0 1 20%;
+                display:inline-block;
+            }
+
+            &__text-wrapper{
+                width:80%;
+            }
+
+
+
+
+}

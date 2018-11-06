@@ -9,45 +9,62 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header class="header header__blog-img"> 
+    <header class="header header__flex-container"> 
         <nav class="header__nav">
             <ul class="header__list">
                 <li class="header__item"><a class="header__link" href="">Home</a></li>
                 <li class="header__item"><a class="header__link" href="">About</a></li>
-                <li class="header__item" "header__item--bold">Willow</li>
+                <li class="header__item header__item--bold">Willow</li>
                 <li class="header__item"><a class="header__link header__link--accent" href="">Blog</a></li>
-                <li class="header__item"><a class="header_link" href="">Contact</a></li>
+                <li class="header__item"><a class="header__link" href="">Contact</a></li>
             </ul>
         </nav>
-        <h2 class="header__blog-title">Blog & news</h2>
+        <div class="header__blog-img">
+            <h2 class="header__blog-title wrapper">Blog & news</h2>
+        </div>
+       
     </header>
     <main>
         <section class="blog">
             <div class="wrapper">
                 <div class= "blog__main-flex-container">
                     <div class="blog__sidebar-flex-container"> 
-                        <div class="blog__flex-item blog__flex-item-container">
-                            <img class="blog__flex-item" src="assets/blog-image-2.jpg" alt="Willow, long auburn hair, emerald green eyes, relaxed facial expression, in yellow rain jacket behind out of focus leaves.">
-                            <h3 class="blog__flex-item">About willow</h3>
-                            <p class="blog__flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, reprehenderit soluta eaque numquam et quasi? Eius ipsa quas optio distinctio.</p>
+                        <div class="blog__sidebar-item">
+                            <img class="blog__side-img" src="assets/blog-image-2.jpg" alt="Willow, long auburn hair, emerald green eyes, relaxed facial expression, in yellow rain jacket behind out of focus leaves.">
+                            <h3 class="blog__side-title">About willow</h3>
+                            <p class="blog__side-text">Lorem ipsum nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. <a class="blog__side-link" href="">Find out more</a></p>
+                           
                         </div>
-                        <div class="blog__flex-item blog__flex-item-container">
-                            <h3 class="blog__flex-item">Recent posts</h3>
-                            <ul class="blog__flex-item">
-                                <li class="blog__flex-item-text" >Lorem ipsum dolor sit amet.</li>
-                                <li class="blog__flex-item-text">Nihil asperiores sequi maiores nulla?</li>
-                                <li class="blog__flex-item-text">Repellat numquam aliquid fugiat aspernatur.</li>
-                                <li class="blog__flex-item-text">Et nemo qui alias ipsa!</li>
+                        <div class="blog__sidebar-item">
+                            <h3 class="blog__side-title">Recent posts</h3>
+                            <ul class="blog__side-list">
+                                <li class="blog__side-text" >Donec facilisis tortor ut</li>
+                                <li class="blog__side-text">Augue lacinia at viverra</li>
+                                <li class="blog__side-text">Semper sed sapien metus </li>
+                                <li class="blog__side-text">Scelerisque nec pharetra id</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="blog__flex-item blog__post-flex container > <!--give bottom border-->
-                        <h1 class="blog__flex-item-text">My favourite travel destinations</h1>
-                        <p class="blog__flex-item-text">Monday October 8th, 2018 by Willow</p>
-                        <p class="blog__flex-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta consequatur ratione facere placeat. Aut non
-                            inventore sit repellendus fuga provident earum qui! Magni illo tempora ab ut? Expedita nisi eaque eum ea hic
-                            eveniet. Aspernatur officia provident dolor nihil ratione, aliquam non? Recusandae, corporis nulla. Ipsum eos
-                            aspernatur quasi eligendi?</p>
+                    <div class= "blog__post-flex-container" > <!--give bottom border-->
+                        <h1 class="blog__post-title">My favourite travel destinations</h1>
+                        <p class="blog__main-text">Monday October 8th, 2018 by Willow</p>
+                        <p class="blog__main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta consequatur ratione facere placeat. Aut non Aspernatur officia provident dolor nihil ratione, aliquam non? Recusandae, corporis</p>
+                        <p class="blog__main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quod ullam, aspernatur libero maiores consectetur quo distinctio ducimus labore nesciunt minima deleniti ut, explicabo voluptatibus assumenda rem et veritatis quibusdam onsectetur adipisicing elit. Aperiam!</p>
+
+                       
+                        <p class="blog__main-text">inventore sit repellendus fuga provident earum qui! Magni illo tempora ab ut? Expedita nisi eaque eum ea hic
+                        eveniet. Aspernatur officia provident dolor nihil ratione, aliquam non? Recusandae, corporis nulla. Ipsum eosa
+                        spernatur quasi eligendi?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita similique quas nam cumque, libero voluptatum
+                        distinctio eos error minus iure ad iusto odit, numquam quidem obcaecati odio animi. Perspiciatis, quos?</p>
+
+                        <p class="blog__main-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam rerum enim exercitationem repudiandae asperiores accusamus quo laborum neque itaque necessitatibus.</p>
+
+                        <p class="blog__main-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe fugiat ab dolor, iste aperiam quo perferendis asperiores ullam aliquid repellendus doloremque molestiae illum qui officia eum sunt accusantium? Natus earum fugit optio quam excepturi fuga explicabo velit architecto numquam animi.</p>
+                        
+                        <p class="blog__main-text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, neque quam! Fuga iure veniam natus eum aliquam eos illum accusantium, doloremque tempore earum, autem maiores magnam illo perspiciatis animi perferendis officiis mollitia delectus repudiandae! Quasi blanditiis numquam nobis quibusdam impedit eius, Ipsum?</p>
+                            
                     </div>
                 </div>
             </div>
@@ -59,16 +76,18 @@
             <div class="wrapper"> 
                 <div class="comments__main-container"> <!--display flex, give bottom border-->
                     <div class="comments__first-commenter-container"> <!--display flex-->
-                        <img class="comments__img comments__item"src="assets /blog-image-3.jpg" alt="Profile picture of first commenter">
-                        <div class="comments__item">
+                        <img class="comments__img" src="assets/blog-image-3.jpg"alt="Profile picture of first commenter">
+        
+                        <div class="comments__text-wrapper">
                             <p class="comments__text">Tuesday October 9th, 2018 by Barb</p>
                             <p class="comments__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nesciunt explicabo, similique architecto dignissimos rerum veniam qui neque quae numquam quia ratione quaerat alias dolorem.</p>
                         </div>
-                    </div class="comments__second-commenter-container">
-                        <img class="comments__img comments__item" src="assets /blog-image-4.jpg"" alt="Profile picture of second commenter">
-                        <div class="comments-item">
-                            <p>Wednesday October 10th, 2018 by Daisy</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam officiis tempora corrupti rerum eos unde architecto, numquam perferendis magni facere animi, laboriosam sed voluptate quae.</p>
+                    </div>
+                    <div class="comments__second-commenter-container">
+                        <img class="comments__img" src= "assets/blog-image-4.jpg" alt="Profile picture of second commenter">
+                        <div class="comments-text-wrapper">
+                            <p class="comments__text">Wednesday October 10th, 2018 by Daisy</p>
+                            <p class="comments__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam officiis tempora corrupti rerum eos unde architecto, numquam perferendis magni facere animi, laboriosam sed voluptate quae.</p>
                         </div>
                     </div>
                 </div>
