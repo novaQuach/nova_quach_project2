@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Willow-contact</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" 
+    href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    </head>
 </head>
 <body>
     <main>
@@ -28,24 +32,26 @@
             <div class="wrapper">
                 <div class="contact__main-container">
                     <div class="contact__info-container"> <!--flex this container-->
-                        <nav class="contact__nav">
-                            <ul class="contact__nav-menu"> <!--this is a flex parent-->
-                                <li class="contact__nav-item"><a class="contact__link" href="https://www.facebook.com/"><i class="fab fa-facebook-f contact__icon"></i></a></li>
-                                <li class="contact__nav-item"><a class="contact__link" href=""><i class="fab fa-twitter contact__icon"></i></a></li>
-                                <li class="contact__nav-item"><a class="contact__link" href=""><i class="fab fa-linkedin-in contact__icon"></i></a></li>
-                                <li class="contact__nav-item"><a class="contact__link" href=""><i class="fab fa-instagram contact__icon"></i></a></li>
+                        <nav class="contact__media">
+                            <ul class="contact__media-list"> <!--this is a flex parent-->
+                                <li class="contact__media-item"><a class="contact__media-link" href="https://www.facebook.com/"><i class="fab fa-facebook-f contact__icon"></i></a></li>
+                                <li class="contact__media-item"><a class="contact__media-link" href=""><i class="fab fa-twitter contact__icon"></i></a></li>
+                                <li class="contact__media-item"><a class="contact__media-link" href=""><i class="fab fa-linkedin-in contact__icon"></i></a></li>
+                                <li class="contact__media-item"><a class="contact__media-link" href=""><i class="fab fa-instagram contact__icon"></i></a></li>
                             </ul>
                         </nav>
-                        <a href="mailto:info@email.com" class= "contact__text-link--bold">info@email.com</a>
                         <ul class="contact__details">
+                            <li><a href="mailto:info@email.com" class="contact__text-link contact__text-link--bold">info@email.com</a></li>
+
+
                             <li><a href="tel:1234567890" class="contact__text-link">123 - 456 - 7890</a></li>
-                            <li ><a href="https://goo.gl/maps/8va8K3NYdNA2" class="contact__text--link">123 Queen Street West, Unit 10</a></li>
-                            <li><a class="contact__text--link">Toronto, Ontario</a></li>
-                            <li><a class="contact__text--link">M5V2D5</a></li>
+
+                            <li ><a href="https://goo.gl/maps/8va8K3NYdNA2" class="contact__text-link">123 Queen Street West, Unit 10</a></li>
+                            <li><a href="https://goo.gl/maps/8va8K3NYdNA2"class="contact__text-link">Toronto, Ontario</a></li>
+                            <li><a href="https://goo.gl/maps/8va8K3NYdNA2" class="contact__text-link">M5V2D5</a></li>
                         </ul>
                     </div>
-                </div>
-                <div class="contact__form">
+
                     <div class="contact__form-container">
                         <form>
                             <div class="contact__form-item">
@@ -68,12 +74,12 @@
                             </div>
                         </form>
                     </div>        
-                </div>
+                    </div>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <p class="footer-note">Copyright &copy; 2018 HackerYou</p>
+        <p class="footer__note">Copyright &copy; 2018 HackerYou</p>
     </footer>
 </body>
 </html>

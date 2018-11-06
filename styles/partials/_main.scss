@@ -290,6 +290,71 @@
             height:5%;
         }
 
+}
+
+
+// CONTATCT STYLES BEGIN
+.contact {
+    background:$secondary-color;
+    &__main-container {
+        display:flex;
+        padding:50px;
+    
+    }
+    // the social media box 
+        &__info-container {
+            flex: 0 1 33%;
+            background: white;
+            margin-right:20px;
+            width:100%;
+            display:flex;
+            flex-direction:column;
+            justify-items:center;
+            padding:20px;
+            
+            
+            
+        }
+            // &__contact-media {
+            //     text-align:left;
+            // }
+                &__media-list {
+                    list-style:none;
+                    padding:0;
+                    
+                }
+                    &__media-item {
+                        display:inline-block;
+                        
+                    }
+                        &__media-link {
+                            color: $tertiary-dark-color;
+                            font-size:$primary-text;
+                            margin-right:18px;
+                        }
+                        
+                &__details {
+                    list-style:none;
+                    padding:0;
+                }
+                    &__text-link--bold{
+                        font-weight:400;
+                    }
+
+                    &__text-link {
+                        text-decoration:none;
+                        font-size:$primary-text;
+                        color:$primary-color;
+                        font-weight:100;
+                    }
+
+
+
+        &__form-container {
+            flex: 0 1 67%;
+        }
+
+
 
 
 
