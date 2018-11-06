@@ -80,15 +80,18 @@
                             <img class="comments__img" src="assets/blog-image-3.jpg"alt="Profile picture of first commenter"></div>
         
                         <div class="comments__text-wrapper">
-                            <p class="comments__text">Tuesday October 9th, 2018 by Barb</p>
-                            <p class="comments__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nesciunt explicabo, similique architecto dignissimos rerum veniam qui neque quae numquam quia ratione quaerat alias dolorem.</p>
+                            <span class="comments__text">Tuesday October 9th, 2018 by Barb</span>
+                            <span class="comments__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nesciunt explicabo, similique architecto dignissimos rerum veniam qui neque quae numquam quia ratione quaerat alias dolorem.</span>
                         </div>
                     </div>
                     <div class="comments__second-commenter-container">
-                        <img class="comments__img" src= "assets/blog-image-4.jpg" alt="Profile picture of second commenter">
-                        <div class="comments-text-wrapper">
-                            <p class="comments__text">Wednesday October 10th, 2018 by Daisy</p>
-                            <p class="comments__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam officiis tempora corrupti rerum eos unde architecto, numquam perferendis magni facere animi, laboriosam sed voluptate quae.</p>
+                        <div class="comments__img-wrapper">
+                            <img class="comments__img" src= "assets/blog-image-4.jpg" alt="Profile picture of second commenter">
+                        </div>    
+
+                        <div class="comments__text-wrapper">
+                            <span class="comments__text">Wednesday October 10th, 2018 by Daisy </span>
+                            <span class="comments__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam officiis tempora corrupti rerum eos unde architecto, numquam </span>
                         </div>
                     </div>
                 </div>
@@ -98,28 +101,28 @@
         <!-- COMMENTS FORM -->
         <section class="comment-form">
             <div class="wrapper">
-                <div class="comment-form__container"> <!--display flex-->
-                    <form>
-                        <div class="comment-form__item"> <!--flex box, contain name and email address-->
-                            <div>
+                
+                <form>
+                    <div class="comment-form__container">
+    
+                        <div class="comment-form__name-email-wrapper"> <!--flex box, contain name and email address-->
                                 <label for="Name"></label>
-                                <input type="text" placeholder="Name" id="Name">
-                            </div>
-                            <div>
+                                <input class="comment-form__name" type="text" placeholder="Name" id="Name">
+                        
                                 <label for="Email"></label>
-                                <input type="email" placeholder="Email address" id="Email">
-                            </div>
+                                <input class="comment-form__email"type="email" placeholder="Email address" id="Email">
+                            
                         </div>
-                        <div class="comment-form__item">
+                        
                             <label for="Comment"></label>
-                            <textarea name="Comment" id="Comment" placeholder="Comment"></textarea>
-                        </div>
-                        <div class="commment-form__item">
+                            <textarea class="comment-form__box" name="Comment" id="Comment" placeholder="Comment"></textarea>
+                        
+                        
                             <label for="Post Comment"></label>
                             <input class="comment-form__button" type="Submit" value="Post Comment" id="Post Comment">
-                        </div>
-                    </form>
-                </div>
+                        
+                    </div>        
+                </form>
             </div>        
         </section>    
     </main>
