@@ -1,0 +1,126 @@
+// 1505 circle breaks , 2x2 margin shift up 
+@media(max-width:1505px) {
+    .favourite .favourite__info {
+      padding: 20px 0 0 50px;
+        }
+    .favourite__link {
+    margin: 0;
+    }
+
+    .bucket .bucket__info {
+        margin: 50px 50px 0 0;
+    }
+    .bucket__link {
+        margin:0;
+    }
+
+}
+
+@media(max-width:1365px) {
+    .favourite__img{
+        max-width:512px;
+    }
+    .bucket .bucket_img{
+        height:320px;
+    }
+}
+
+@media(max-width: 1320px) {
+    .header__main-flex-container {
+        flex-direction: column;
+    }
+    .header__title {
+        // font-size: 10rem;
+        height: auto;
+         &::before {
+             left: 70px;
+             top: 10px;
+         }
+    }
+
+    .header__img {
+        width: 400px;
+    }
+}
+
+@media(max-width: 1000px) {
+    .header__title {
+        display: none;
+    }
+
+    .favourite {
+        &__flex-container {
+            flex-direction: column;
+            padding-top: 50px;
+        }
+        
+        &__flex-item {
+            flex: 0 1 100%;
+            text-align: center;
+        }
+
+
+        &__title, &__text, &__link {
+            text-align: center;
+        }
+    }
+
+    .favourite .favourite__info {
+        text-align: center;
+    }
+
+    .bucket {
+        &__flex-container {
+            flex-direction: column-reverse;
+            padding-top: 50px;
+        }
+        
+        &__flex-item {
+            flex: 0 1 100%;
+            text-align: center;
+        }
+
+
+        &__title, &__text, &__link {
+            text-align: center;
+        }
+    }
+
+    .bucket .bucket__info {
+        text-align: center;
+    }
+
+    .bucket .bucket__img {
+        top: 0;
+    }
+
+    .journey {
+        padding: 40px;
+        &__flex-container {
+            flex-direction: column;
+            margin-top: 0;
+        }
+        &__flex-item {
+            flex: 0 1 100%;
+            text-align: center;
+        }
+
+        &__title, &__text, &__link {
+            text-align: center;
+        }
+    }
+
+    .journey .journey__item-container {
+        text-align: center;
+        padding-top: 30px;
+    }
+}
+
+
+
+
+
+
+
+// 1282px IPAD VIEW 
+// 2x2 do do not flex, on top of one another 

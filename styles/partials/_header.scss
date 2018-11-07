@@ -1,10 +1,5 @@
 .header {
     background: $tertiary-dark-color;
-
-    //  &__home {
-    //     width:100vh;
-    // }
-    
 }
 
    
@@ -43,24 +38,26 @@
     @include heading-font($willow-text, $secondary-color);
     margin: 0;
     
-    flex: 0 1 60%;
+    flex: 0 1 auto;
     align-self: center;
+    height: 700px;
+    text-align: right;
+    padding-right: 20px;
 
     &::before {
         content: url('../assets/circle-text.png');
-        position: absolute;
-        left: -50px;
-        top: 250px;
+        position: relative;
+        left: -550px;
+        top: 220px;
     }
 }
 
 .header__img {
     box-shadow: 20px 20px 0 white;
-    flex: 0 1 40%;
+    flex: 1 0 auto;
     position: relative;
     top: 60px;
-    // height: 700px;
-    max-width:100%;
+    width: 500px;
 }
 
 // BLOG STYLES BEGIN 
@@ -147,3 +144,8 @@
     }
 
 }
+
+//media query 
+// 1505px -circle shifts ; 2x2 maybe move margin of the text up 
+
+
