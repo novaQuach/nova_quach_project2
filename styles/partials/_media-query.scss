@@ -43,7 +43,7 @@
     }
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1003px) {
     .header__title {
         display: none;
     }
@@ -117,8 +117,223 @@
 }
 
 
+// 785px ; remove the text on footer , smaller icons/fonts
+@media(max-width:785px) {
+    .header {
+            &__link {
+                margin:10px;
+                font-size:2rem;
+            }
+            
+            & .header__item {
+                font-size:3.4rem;
+                line-height:15px;
+            }
+
+            &__nav{
+            padding:0 5px;
+        }   
+            &__img{
+                width:300px;
+            } 
+        
+        }
+
+    .footer__text {
+        display:none
+    }
+
+    .footer__link {
+        font-size: 2.4rem;
+    }
+}
+
+@media(max-width:746px){
+    .journey__flex-container {
+        flex:none;
+        width:100%;
+        text-align:center;
+        margin-top:20px;
+    }
+
+    .journey__flex-container {
+        box-shadow:none;
+        width:100%;
+    }
+    .journey__img{
+        width:300px;
+    }
+    .journey .journey__item-container {
+        padding:0;
+        text-align:center;
+        margin-top:50px;
+    }
+    
+    .bucket .bucket__img,.favourite .favourite__img{
+        width:500px;
+    }
+
+    .gallery__flex-container {
+        padding:50px 0;
+    }
+
+     .footer__link {
+        font-size: 2rem;
+        text-align:center;
+        padding: 5px 0 5px 0;
+    }
+    .footer__icon::before{
+        left:0px;
+    }
+    .fa-tv.footer__icon::before {
+        left: 2px;
+    }
+
+    .footer__note {
+        font-size: 1.6rem;
+    }
+
+}
+
+
+@media(max-width:640px) {
+    .header {
+        &__link {
+        margin:5px;
+        font-size:1.8rem;
+        }
+    
+        & .header__item {
+        font-size:3rem;
+        line-height:16px;
+        } 
+    } 
+
+    .gallery__flex-container {
+        padding:35px 0;
+    }
+
+}
+
+@media(max-width:588px){
+      .header {
+        &__nav{
+            padding:0;
+        }    
+
+        &__item:nth-child(3){
+            display:none;
+        }
+
+        &__link{
+            margin:10px;
+            font-size:1.2rem;
+        }
+
+        &__img {
+            width:250px;
+            position:static;  
+        }
+        
+        &__main-flex-container {
+            flex:none;
+            margin-top:20px;
+        }
+    }
+    .favourite .favourite__img{
+        width:100%;
+        box-shadow: -20px -20px $tertiary-light-color;
+        margin-top:20px;
+    }
+
+    .favourite__flex-container{
+        flex:none;
+        width:100%;
+        text-align:center;
+        padding:0;
+    }
+
+   .favourite .favourite__info {
+       padding: 0;
+   }
+
+    .favourite .favourite_text {
+        margin:0;
+    }
+
+    .bucket__flex-container{
+        flex:none;
+        width:100%;
+        text-align:center;
+        padding:0;
+    
+    }
+
+    .bucket .bucket__info {
+       margin:50px 0 0 0;
+       text-align:center;
+   }
+    .bucket .bucket__img {
+        width:100%;
+        box-shadow:20px 20px $tertiary-dark-color;
+        margin-top:50px;
+        padding-left: 20px;
+    }
+
+    .journey__flex-container {
+        flex:none;
+        width:100%;
+        text-align:center;
+        margin-top:20px;
+    }
+
+    .journey__flex-container{
+        box-shadow:none;
+        width:100%;
+    }
+
+    .journey.journey__img {
+        width:150px;
+
+    }
+    
+    .journey .journey__item-container {
+        padding:0;
+        text-align:center;
+        margin-top:50px;
+    }
+    
+     .footer__main-flex-container {
+        flex: none;
+        display: block;
+        padding:30px 0 30px 80px;
+    }
+
+    .footer__item {
+            // text-align :center;
+        display: block;
+    }
+
+    .footer__link {
+        font-size: 2rem;
+        text-align:center;
+        padding: 5px 0 5px 0;
+    }
+    .footer__icon::before{
+        left:0px;
+    }
+    .fa-tv.footer__icon::before {
+        left: 2px;
+    }
+
+    .footer__note {
+        font-size: 1.6rem;
+}
+
+}
+
 // mobile 
-@media(max-width:400px) {
+@media(max-width:458px) {
     .header {
         &__nav{
             padding:0;
@@ -192,7 +407,7 @@
 
     .journey__flex-container .journey__img {
         box-shadow:none;
-        width:100%;
+        width:80%;
     }
     
     .journey .journey__item-container {
@@ -211,9 +426,9 @@
         margin-top: 20px;
     }
    
-    .footer__text {
-        display:none
-    }
+    // .footer__text {
+    //     display:none
+    // }
 
     .footer__main-flex-container {
         flex: none;
