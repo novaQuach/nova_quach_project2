@@ -142,6 +142,8 @@
         &__sidebar-flex-container {
             flex: 0 1 32%;
             flex-direction:wrap;
+            width:100%;
+            margin-right:40px;
         }
             &__sidebar-item {
                 display:flex;
@@ -174,6 +176,7 @@
         &__sub-main-container {
             flex: 0 1 65%;
             margin-bottom:100px;
+            width:100%;
 
         }
                 
