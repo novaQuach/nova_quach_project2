@@ -1386,4 +1386,119 @@ html {
     padding-top: 30px;
   }
 }
+
+@media (max-width: 400px) {
+  .header__nav {
+    padding: 0;
+  }
+  .header__item:nth-child(3) {
+    display: none;
+  }
+  .header__link {
+    margin: 10px;
+    font-size: 1.2rem;
+  }
+  .header__img {
+    width: 200px;
+    position: static;
+  }
+  .header__main-flex-container {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    margin-top: 20px;
+  }
+  .favourite .favourite__img {
+    width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    margin-top: 20px;
+  }
+  .favourite__flex-container {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  .favourite .favourite__info {
+    padding: 0;
+  }
+  .favourite .favourite_text {
+    margin: 0;
+  }
+  .bucket__flex-container {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  .bucket .bucket__info {
+    margin: 50px 0 0 0;
+    text-align: center;
+  }
+  .bucket .bucket__img {
+    width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    margin-top: 50px;
+    padding-left: 20px;
+  }
+  .journey__flex-container {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .journey__flex-container .journey__img {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    width: 100%;
+  }
+  .journey .journey__item-container {
+    padding: 0;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .gallery__flex-container {
+    display: block;
+    padding: 20px 0 20px;
+  }
+  .gallery__img {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .footer__text {
+    display: none;
+  }
+  .footer__main-flex-container {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    display: block;
+    padding: 0;
+  }
+  .footer__item {
+    display: block;
+  }
+  .footer__link {
+    font-size: 2rem;
+    text-align: center;
+    padding: 5px 0 5px 0;
+  }
+  .footer__icon::before {
+    left: 0px;
+  }
+  .fa-tv.footer__icon::before {
+    left: 2px;
+  }
+  .footer__note {
+    font-size: 1.6rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
