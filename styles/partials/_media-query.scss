@@ -522,9 +522,11 @@
     }
 }
 
-// profile pic of commenters getting squished
-// @media(max-width:1118px) {
-//     .blog__main-flex-container {
-//         flex:none;
-//     }
-// }
+@media (max-width: 382px) {
+    .header__blog-title {
+        font-size: $text-medium;
+    }
+    .blog__post-title {
+        font-size: $text-small;
+    }
+}
