@@ -2,26 +2,26 @@
     background: $tertiary-dark-color;
 }
 
-   
-
 .header__list {
     list-style: none;
-    margin:0 auto;
-    padding-top:20px;
-    display:flex;
-    width:60%;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    width: 60%;
 }
 
-
 .header__item--bold {
-    @include heading-font($text-large,$secondary-color);
-    line-height:20px;
+    @include heading-font($text-large, $secondary-color);
+    line-height: 20px;
     margin: 0 23px 0 23px;
 }
 
 .header__link {
     @include menu-text-color($secondary-color);
     margin: 0 23px 0 23px;
+    &:hover {
+        color: $accent-color;
+    }
 }
 
 .header__link--accent {
@@ -29,15 +29,15 @@
 }
 
 .header__main-flex-container {
-    display:flex;
-    width:100%;
-    position:relative;
+    display: flex;
+    width: 100%;
+    position: relative;
 }
 
 .header__title {
     @include heading-font($willow-text, $secondary-color);
     margin: 0;
-    
+
     flex: 0 1 auto;
     align-self: center;
     height: 700px;
@@ -60,92 +60,83 @@
     width: 500px;
 }
 
-// BLOG STYLES BEGIN 
+// BLOG STYLES BEGIN
 .header {
-    &__blog{
-    height:50vh;
+    &__blog {
+        height: 50vh;
     }
 
-    &__blog-img{
-    background: url("../assets/blog-image-1.jpg");
+    &__blog-img {
+        background: url('../assets/blog-image-1.jpg');
     }
 
-     &__flex-container {
-        display:flex;
-        flex-direction:column;
-        justify-content:space-between;
+    &__flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     &__nav {
-        background:$tertiary-dark-color;
-        padding-bottom:13px;
+        background: $tertiary-dark-color;
+        padding-bottom: 13px;
     }
 
     &__blog-tittle-header {
-        position:relative;
-    }
-   
-    &__list {
-        padding-left:0;
-        justify-content:center;
+        position: relative;
     }
 
+    &__list {
+        padding-left: 0;
+        justify-content: center;
+    }
 
     &__blog-title {
-        @include heading-font($text-xlarge,$secondary-color);
-        line-height:92px;
-        margin:0;
-        position:relative;
-        top:17px;
-        
+        @include heading-font($text-xlarge, $secondary-color);
+        line-height: 92px;
+        margin: 0;
+        position: relative;
+        top: 17px;
     }
-
 }
 
-// CONTACT STYLES BEGIN 
+// CONTACT STYLES BEGIN
 .header {
-
-    &__contact{
-    height:50vh;
+    &__contact {
+        height: 50vh;
     }
 
-    &__contact-img{
-    background: url("../assets/contact-image-1.jpg");
+    &__contact-img {
+        background: url('../assets/contact-image-1.jpg');
     }
 
-     &__flex-container {
-        display:flex;
-        flex-direction:column;
-        justify-content:space-between;
+    &__flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     &__nav {
-        background:$tertiary-dark-color;
-        padding-bottom:13px;
+        background: $tertiary-dark-color;
+        padding-bottom: 13px;
     }
 
     &__contact-tittle-header {
-        position:relative;
-    }
-   
-    &__list {
-        padding-left:0;
-        justify-content:center;
+        position: relative;
     }
 
+    &__list {
+        padding-left: 0;
+        justify-content: center;
+    }
 
     &__contact-title {
-        @include heading-font($text-xlarge,$secondary-color);
-        line-height:92px;
-        margin:0;
-        position:relative;
-        top:17px;
-        
+        @include heading-font($text-xlarge, $secondary-color);
+        line-height: 92px;
+        margin: 0;
+        position: relative;
+        top: 17px;
     }
-
 }
 
-//media query 
-// 1505px -circle shifts ; 2x2 maybe move margin of the text up 
-
-
+//media query
+// 1505px -circle shifts ; 2x2 maybe move margin of the text up

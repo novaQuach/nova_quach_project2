@@ -1,6 +1,5 @@
 .footer {
-    background:$secondary-color;
-
+    background: $secondary-color;
 }
 
 .footer__main-flex-container {
@@ -9,19 +8,19 @@
 }
 
 .footer__item {
-    list-style:none;
+    list-style: none;
     flex: 0 1 50%;
 }
 .footer__link {
-    text-decoration:none;
-    color:$primary-color;
-    font-family: 'Abril Fatface',cursive;
+    text-decoration: none;
+    color: $primary-color;
+    font-family: 'Abril Fatface', cursive;
     letter-spacing: 1px;
-    text-transform:uppercase;
+    text-transform: uppercase;
     font-size: $text-medium;
-    font-weight:300;
+    font-weight: 300;
 
-    margin-right:10px;
+    margin-right: 10px;
     display: inline-block;
 }
 
@@ -30,9 +29,9 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    font-size:$primary-text;
+    font-size: $primary-text;
     display: inline-block;
-    
+
     &::before {
         position: relative;
         left: 15px;
@@ -64,5 +63,6 @@
     @include body-text(center);
     font-weight: 100;
     padding: 5px 0 5px 0;
-    margin:0;
+    margin: 0;
+    text-decoration: none;
 }
